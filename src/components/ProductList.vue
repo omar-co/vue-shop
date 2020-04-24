@@ -40,9 +40,10 @@
         },
         methods: {
             ...mapActions('products', ['fetchProducts']),
+            ...mapMutations('cart', ['addProduct']),
 
-            addProductToCart(producto) {
-
+            addProductToCart(product) {
+                this.addProduct(product)
             }
         }
     }

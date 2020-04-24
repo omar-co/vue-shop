@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 import products from '../modules/products'
+import cart from '../modules/Cart'
 
 export default new Vuex.Store({
   state: {
@@ -13,6 +14,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    products
+    products,
+    cart
   }
 })
